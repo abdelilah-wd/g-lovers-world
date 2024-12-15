@@ -1,0 +1,67 @@
+.hero-area {
+    background-image: url(../../../img/five-games-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+}
+
+.header-section {
+    padding: 1rem 0;
+    background: #24293d;
+    box-shadow: 0px 10px 20px 0px #000000f2;
+}
+
+.header-section .header-content a {
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.header-content a h1 {
+    margin: 0;
+    font-size: 2rem;
+    font-weight: 900;
+    letter-spacing: 1.5px;
+}
+
+.header-content a span {
+    font-size: 12px;
+    color: #55aa05;
+}
+
+.landing-section {}
+
+.landing-section .box {
+    width: 90%;
+    height: 400px;
+    background-color: #eeeeee94;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 16px;
+    padding: 2rem;
+    -webkit-animation: change-box-c 1s linear alternate infinite;
+    animation: change-box-c 5s linear alternate infinite;
+}
+
+@-webkit-keyframes change-box-c {}
+
+@keyframes change-box-c {
+    0% {
+        box-shadow: 0px 0px 20px 0px #bb0b0b;
+    }
+
+    50% {
+        box-shadow: 0px 0px 20px 0px #4cbc00;
+    }
+
+    100% {
+        box-shadow: 0px 0px 20px 0px #1273ca;
+    }
+}
