@@ -1,52 +1,44 @@
+:root {
+    /* Colors */
+    --blue-color: #1292EE;
+    --blue-100-color: #F3FBFF;
+    --blue-200-color: #D6EDFF;
+    --blue-300-color: #A0D4FF;
+    --blue-400-color: #57B0FB;
+    --blue-500-color: #1292EE;
+    --blue-600-color: #0077CC;
+    --blue-700-color: #005CA4;
+    --blue-800-color: #034077;
+    --blue-900-color: #002651;
+
+}
+
 body {
     height: 10000px;
 }
 
 /* Start Header Section  */
-nav.navbar .container .navbar-brand h1 {
-    font-size: 2rem;
-    font-weight: bold;
-}
-/* End Header Section  */
-
-/* Start Landing Section  */
-.carousel .carousel-inner .carousel-item {
-    width: 100%;
-    height: calc(100vh - 72px);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    position: relative;
-}
-
-.carousel .carousel-inner .carousel-item:first-child {
-    background-image: url(../img/landingimg1.webp);
-}
-
-.carousel .carousel-inner .carousel-item:nth-child(2) {
-    background-image: url(../img/unnamed.webp);
-}
-
-.carousel .carousel-inner .carousel-item:last-child {
-    background-image: url(../img/one.webp);
-}
-
-.carousel .carousel-inner .carousel-item::before {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 100%;
+.navbar {
+    background-color: var(--blue-300-color) !important;
+    box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.45);
+    padding: 8px 0 !important;
+    position: fixed;
     top: 0;
     left: 0;
-    background-color: rgba(0, 0, 0, 80%);
+    width: 100%;
 }
 
-.carousel .carousel-item .carousel-caption {
-    top: 50%;
-    transform: translateY(-50%);
-    display: flex !important;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+.navbar .navbar-brand img {
+    width: 65px;
 }
-/* End Landing Section  */
+
+.navbar .navbar-collapse .navbar-nav .nav-item a {
+    font-weight: 600;
+    padding: 0.5rem 1rem !important;
+}
+
+.navbar .dropdown-menu {
+    background: var(--blue-200-color);
+}
+
+/* End Header Section  */
