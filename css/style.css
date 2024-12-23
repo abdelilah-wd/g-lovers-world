@@ -26,6 +26,7 @@ body {
     top: 0;
     left: 0;
     width: 100%;
+    z-index: 100;
 }
 
 .navbar .navbar-brand img {
@@ -35,10 +36,39 @@ body {
 .navbar .navbar-collapse .navbar-nav .nav-item a {
     font-weight: 600;
     padding: 0.5rem 1rem !important;
+    font-size: 17px;
+    color: var(--blue-900-color);
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+
+.navbar .navbar-collapse .navbar-nav .nav-item a:hover {
+    color: var(--blue-color);
 }
 
 .navbar .dropdown-menu {
     background: var(--blue-200-color);
+}
+
+.landing-section {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../img/five-games-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.landing-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--blue-900-color);
+    ;
 }
 
 /* End Header Section  */
